@@ -1,13 +1,19 @@
 
 {
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "outDir": "dist"
+  "name": "my-x402-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/server.ts"
   },
-  "include": ["src/**/*.ts"]
+  "dependencies": {
+    "@payai/facilitator": "2.4.5",
+    "@x402/core": "2.27.0",
+    "@x402/evm": "2.27.0",
+    "@x402/express": "2.27.0",
+    "express": "5.1.0",
+    "tsx": "4.20.5",
+    "viem": "2.57.2"
+  }
 }
